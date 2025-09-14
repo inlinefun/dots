@@ -1,8 +1,13 @@
 
 setopt prompt_subst
 
+precmd() {
+  LAST_EXIT_CODE=$? # used by indicator at working dir
+}
+
 working_dir() {
-  local output
+  local output background
+
   if [[ $PWD == $HOME ]]; then
     output=" "
   elif [[ $PWD == $HOME/* ]]; then
@@ -10,7 +15,14 @@ working_dir() {
   else
     output="/${PWD#/}"
   fi
-  echo "%F{blue}%K{blue}%F{white}$output%k%F{blue}"
+
+  if [[ $LAST_EXIT_CODE -eq 0 ]]; then
+    background="blue"
+  else 
+    background="red"
+  fi
+  
+  echo "%F{$background}%K{$background}%F{white}$output%k%F{$background}"
 }
 
 git_info() {
