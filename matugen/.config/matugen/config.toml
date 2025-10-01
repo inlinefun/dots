@@ -1,7 +1,7 @@
 [config]
 
-[templates.hyprland]
-input_path='./templates/hyprland.conf'
+[templates.hypr]
+input_path='./templates/hypr*.conf'
 output_path='~/.config/hypr/matugen.conf'
 post_hook = 'hyprctl reload'
 
