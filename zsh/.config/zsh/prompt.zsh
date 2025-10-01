@@ -42,7 +42,7 @@ git_info() {
     [[ "${line[2]}" != " " ]] && unstaged=1
   done < <(git status --porcelain 2>/dev/null)
 
-  text="white"
+  text="255"
   if (( ahead > 0 && behind > 0 )); then
     color="red"             # diverged, both ahead.
     text="196"
