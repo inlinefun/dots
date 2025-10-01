@@ -13,3 +13,7 @@ post_hook = 'systemctl --user restart hyprpaper.service'
 [templates.kitty]
 input_path = './templates/kitty.conf'
 output_path = '~/.config/kitty/colors.conf'
+
+[templates.quickshell]
+input_path = './templates/quickshell.qml'
+output_path = '~/.config/quickshell/util/Colors.qml'
