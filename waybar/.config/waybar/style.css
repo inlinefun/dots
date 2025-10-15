@@ -1,0 +1,115 @@
+@import "colors.css";
+
+* {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+window#waybar {
+    font-family: 'Inter', 'JetbrainsMonoNL Nerd Font Propo';
+    font-size: 16px;
+    background: @surface;
+    color: @on_surface;
+}
+
+#mpris, #clock, #gstatus, #tray, #workspaces {
+    padding: 0px 8px 0px 8px;
+    border-radius: 12px;
+    background: @surface_container;
+}
+#network, #bluetooth, #pulseaudio, #backlight, #battery, #power-profiles-daemon {
+    padding: 0px 4px 0px 4px;
+}
+
+#workspaces {
+    padding: 10px 8px 10px 8px;
+}
+#workspaces button {
+    padding: 0px;
+    font-size: 0px;
+    margin: 0px 4px 0px 4px;
+    min-height: 14px;
+    min-width: 14px;
+    border-radius: 14px;
+    border: transparent 2px solid;
+    background: @on_surface;
+    color: @on_surface;
+}
+#workspaces button.active {
+    min-width: 28px;
+    background: @primary;
+}
+#workspaces button.special {
+    background: @primary_container;
+}
+#workspaces button.special.active {
+    border-color: @primary;
+}
+
+#gtray {
+    padding: 0px 100px 0px 0px;
+    min-width: 24px;
+}
+#tray {
+    padding: 8px;
+}
+#tray menu {
+    border-radius: 8px;
+    color: @on_surface;
+    background: @surface;
+}
+#custom-itray {
+    font-size: 20px;
+    color: @on_surface;
+}
+
+#battery.full {
+    color: @primary;
+}
+#battery.normal {
+    color: @secondary;
+}
+#battery.warning {
+    color: @tertiary;
+}
+#battery.critical {
+    color: @error;
+}
+
+#backlight.full {
+    opacity: 1.0;
+    color: @primary;
+}
+#backlight.low {
+    opacity: 0.7;
+}
+#backlight.mid {
+    opacity: 0.8;
+}
+#backlight.high {
+    opacity: 0.9;
+}
+#backlight.minimum {
+    opacity: 0.75;
+    color: @error;
+}
+
+#mpris.playing {
+    color: @primary;
+}
+#mpris.paused {
+    color: @secondary;
+}
+
+#power-profiles-daemon.performance {
+    color: @primary;
+}
+#power-profiles-daemon.power-saver {
+    color: @tertiary;
+}
+
+#network.wifi, #network.ethernet, #bluetooth.connected {
+    color: @primary;
+}
+#network.disabled, #bluetooth.disabled, #pulseaudio.muted {
+    color: @error;
+}

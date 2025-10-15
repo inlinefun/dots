@@ -1,0 +1,145 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 4,
+    "modules-left": [
+        "hyprland/workspaces",
+        "mpris"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "group/gstatus"
+    ],
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "*": 5
+        },
+        "show-special": true,
+        "format": ""
+    },
+    "clock": {
+        "format": "{:%I:%M %p %b %d}",
+        "tooltip": false
+    },
+    "mpris": {
+        "format-playing": "󰏥 {title}",
+        "format-paused": "󰐌 {title}",
+        "format-stopped": "󰙦",
+        "max-length": 12
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 8
+    },
+    "battery": {
+        "format": "{icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "states": {
+            "full": 100,
+            "normal": 99,
+            "low": 30,
+            "critical": 10
+        },
+        "on-scroll-up": "",
+        "on-scroll-down": "",
+        "interval": 10,
+        "tooltip-format": "{capacity}%"
+    },
+    "backlight": {
+        "format": "",
+        "states": {
+            "minimum": 0,
+            "low": 25,
+            "mid": 50,
+            "high": 75,
+            "full": 100
+        },
+        "tooltip-format": "{percent}%"
+    },
+    "bluetooth": {
+        "format": "{icon}",
+        "format-icons": {
+            "disabled": "󰂲",
+            "connected": "󰂱",
+            "default": "󰂯"
+        }
+    },
+    "network": {
+        "format": "{icon}",
+        "format-icons": {
+            "disabled": "󰤭",
+            "disconnected": "󰤭",
+            "wifi": [
+                "󰤟",
+                "󰤢",
+                "󰤥",
+                "󰤨"
+            ],
+            "ethernet": "󰈀",
+            "default": "󰤩"
+        },
+        "tooltip-format": "{ifname}",
+        "tooltip-format-wifi": "{essid}",
+        "tooltip-format-ethernet": "{ifname}",
+        "tooltip-format-disconnected": "disconnected"
+    },
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "format-muted": "󰝟 {volume}%"
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "format-icons": {
+            "performance": "",
+            "power-saver": "󱤅",
+            "default": "󰒲"
+        },
+        "tooltip-format": "{profile}"
+    },
+    "group/gstatus": {
+        "orientation": "horizontal",
+        "modules": [
+            "bluetooth",
+            "network",
+            "custom/seperator",
+            "pulseaudio",
+            "backlight",
+            "power-profiles-daemon",
+            "custom/seperator",
+            "battery"
+        ]
+    },
+    "custom/seperator": {
+        "format": "",
+        "tooltip": false
+    }
+}
