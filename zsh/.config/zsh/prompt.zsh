@@ -59,8 +59,8 @@ git_info() {
         color="0"
     fi
 
-    (( ahead > 0 ))  && arrows+="$ahead "
-    (( behind > 0 )) && arrows+="$behind "
+    (( ahead > 0 ))  && arrows+="↑$ahead "
+    (( behind > 0 )) && arrows+="↓$behind "
 
     echo "%F{$background}%F{$color}%K{$background} 󰘬 $branch $arrows%k%F{$background}%f"
 }
