@@ -1,0 +1,1 @@
+export PATH="/home/me/.deno/bin:$PATH"

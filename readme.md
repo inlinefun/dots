@@ -6,3 +6,4 @@ Each folder is a [stow](https://www.gnu.org/software/stow/) package. Installatio
 > Usage is as simple as running `stow <package>` where `package` can be any folder in the repo
 
 ## Packages:
+- [zsh](https://zsh.sourceforge.io/)
