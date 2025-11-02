@@ -8,7 +8,7 @@ working_dir() {
     local background color output
 
     if [[ $PWD == $HOME ]]; then
-        output=""
+        output=" "
     elif [[ $PWD == $HOME/* ]]; then
         output=" /${PWD#$HOME/}"
     else 
