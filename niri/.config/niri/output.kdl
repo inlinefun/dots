@@ -1,0 +1,10 @@
+output "eDP-1" {
+  mode "1920x1080@60"
+  scale 1.0
+  variable-refresh-rate
+  focus-at-startup
+  backdrop-color "#000000"
+  hot-corners {
+    top-left
+  }
+}
