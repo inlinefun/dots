@@ -1,1 +1,1 @@
-export PATH="/home/me/.deno/bin:/home/me/flutter/bin:$PATH"
+export PATH="$HOME/.deno/bin:$HOME/flutter/bin:$PATH"
