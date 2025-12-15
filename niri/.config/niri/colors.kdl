@@ -1,7 +1,6 @@
 layout {
-  background-color "#000000"
-  border {
-    active-color "#00aeff"
-    inactive-color "#002f45ff"
-  }
+    border {
+        active-color "#b0c6ff"
+        inactive-color "#44464f"
+    }
 }

@@ -1,21 +1,25 @@
 include "colors.kdl"
 
 layout {
+    background-color "transparent"
+    gaps 15
+    center-focused-column "never"
+    default-column-width {
+        proportion 0.5;
+    }
+    border {
+        on
+        width 2
+    }
+    focus-ring {
+        off
+    }
+}
 
-  gaps 15
-  center-focused-column "never"
-
-  default-column-width {
-    proportion 0.5;  }
-
-  border {
-    on
-    width 2
-  }
-  focus-ring {
-    off
-  }
-
+overview {
+    workspace-shadow {
+        off
+    }
 }
 
 animations {
