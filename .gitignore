@@ -1,1 +1,7 @@
-kitty.conf.bak
+kitty/.config/kitty/kitty.conf.bak
+kitty/.config/kitty/themes/Custom Theme.conf
+kitty/.config/kitty/current-theme.conf
+
+niri/.config/niri/colors.kdl
+
+hyprpaper/.config/hypr/hyprpaper.conf
