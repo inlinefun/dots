@@ -19,5 +19,5 @@ environment {
     XDG_SESSION_DESKTOP "wayland"
 }
 
-spawn-at-startup "systemctl" "--user" "start" "waybar.service"
+spawn-at-startup "qs" "-dnc" "whyshell"
 spawn-at-startup "systemctl" "--user" "start" "hyprpaper.service"
