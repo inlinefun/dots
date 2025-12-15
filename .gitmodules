@@ -1,0 +1,3 @@
+[submodule "whyshell/.config/quickshell/whyshell"]
+	path = whyshell/.config/quickshell/whyshell
+	url = https://github.com/inlinefun/whyshell.git
