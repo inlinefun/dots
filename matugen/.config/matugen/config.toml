@@ -17,6 +17,7 @@ post_hook = 'systemctl --user restart hyprpaper.service'
 [templates.kitty]
 input_path = './templates/kitty.conf'
 output_path = '~/.config/kitty/themes/Custom Theme.conf'
+post_hook = 'kitty +kitten themes --reload-in all Custom Theme'
 
 [templates.niri]
 input_path = './templates/niri.kdl'
