@@ -1,0 +1,23 @@
+[config]
+
+[templates.whyshell] # https://github.com/inlinefun/whyshell
+input_path = './templates/quickshell.qml'
+output_path = '~/.config/quickshell/whyshell/common/Colors.qml'
+
+[templates.hypr]
+input_path = './templates/hypr*.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.hyprpaper]
+input_path = './templates/hyprpaper.conf'
+output_path = '~/.config/hypr/hyprpaper.conf'
+post_hook = 'systemctl --user restart hyprpaper.service'
+
+[templates.kitty]
+input_path = './templates/kitty.conf'
+output_path = '~/.config/kitty/themes/Custom Theme.conf'
+
+[templates.niri]
+input_path = './templates/niri.kdl'
+output_path = '~/.config/niri/colors.kdl'
