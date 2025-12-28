@@ -10,6 +10,11 @@ input_path = "templates/hyprpaper.conf"
 output_path = "~/.config/hypr/hyprpaper.conf"
 post_hook = "systemctl --user restart hyprpaper.service"
 
+[templates.kitty]
+input_path = "templates/kitty.conf"
+output_path = "~/.config/kitty/themes/material-theme.conf"
+post_hook = "kitty +kitten themes --reload-in=all material-theme"
+
 [templates.vesktop]
 input_path = "templates/discord.css"
 output_path = "~/.config/vesktop/themes/dynamic.css"
