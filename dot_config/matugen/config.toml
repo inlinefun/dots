@@ -9,3 +9,7 @@ post_hook = "hyprctl reload"
 input_path = "templates/hyprpaper.conf"
 output_path = "~/.config/hypr/hyprpaper.conf"
 post_hook = "systemctl --user restart hyprpaper.service"
+
+[templates.vesktop]
+input_path = "templates/discord.css"
+output_path = "~/.config/vesktop/themes/dynamic.css"
