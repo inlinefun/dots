@@ -4,3 +4,8 @@
 input_path = "templates/hypr.conf"
 output_path = "~/.config/hypr/colors.conf"
 post_hook = "hyprctl reload"
+
+[templates.hyprpaper]
+input_path = "templates/hyprpaper.conf"
+output_path = "~/.config/hypr/hyprpaper.conf"
+post_hook = "systemctl --user restart hyprpaper.service"
