@@ -18,3 +18,7 @@ post_hook = "kitty +kitten themes --reload-in=all material-theme"
 [templates.vesktop]
 input_path = "templates/discord.css"
 output_path = "~/.config/vesktop/themes/dynamic.css"
+
+[templates.zed]
+input_path = "templates/zed.json"
+output_path = "~/.config/zed/themes/matugen.json"
