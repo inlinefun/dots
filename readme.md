@@ -1,5 +1,7 @@
 <h1 align="center">inlinefun/dots</h1>
 
+## No longer updated, updated repo [here](https://github.com/inlinefun/dotfiles)
+
 ### The repository is structured with [stow](https://www.gnu.org/software/stow/)
 
 Each folder is a [stow](https://www.gnu.org/software/stow/) package.
