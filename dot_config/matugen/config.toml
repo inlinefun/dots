@@ -24,6 +24,11 @@ input_path = "templates/kitty.conf"
 output_path = "~/.config/kitty/themes/material-theme.conf"
 post_hook = "kitty +kitten themes --reload-in=all material-theme"
 
+[templates.mako]
+input_path = "templates/mako"
+output_path = "~/.config/mako/colors"
+post_hook = "makoctl reload"
+
 [templates.qt5ct]
 input_path = "templates/qt.conf"
 output_path = "~/.config/qt5ct/colors/material.conf"

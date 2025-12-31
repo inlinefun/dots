@@ -1,0 +1,12 @@
+include=~/.config/mako/colors
+
+border-size=1
+border-radius=3
+default-timeout=5000
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none
