@@ -1,2 +1,4 @@
 *.ignore
 ignore_*
+
+.qmlls.ini
