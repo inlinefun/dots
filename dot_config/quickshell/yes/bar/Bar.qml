@@ -37,6 +37,7 @@ PanelWindow {
                 top: container.top
                 left: container.left
                 bottom: container.bottom
+                margins: 5
             }
             AppLauncher {}
         }
@@ -46,6 +47,7 @@ PanelWindow {
                 top: container.top
                 bottom: container.bottom
                 horizontalCenter: container.horizontalCenter
+                margins: 5
             }
             DateTime {}
         }
@@ -55,6 +57,7 @@ PanelWindow {
                 top: container.top
                 right: container.right
                 bottom: container.bottom
+                margins: 5
             }
         }
     }

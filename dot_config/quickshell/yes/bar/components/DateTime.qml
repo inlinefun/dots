@@ -8,7 +8,6 @@ import qs.common
 
 MouseArea {
     id: root
-    Layout.margins: 5
     Layout.fillHeight: true
     hoverEnabled: true
     implicitWidth: label.implicitWidth + 10

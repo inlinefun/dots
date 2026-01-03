@@ -8,7 +8,6 @@ import qs.icons
 
 MouseArea {
     id: root
-    Layout.margins: 5
     Layout.fillHeight: true
     implicitWidth: height
     hoverEnabled: true
