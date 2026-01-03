@@ -13,9 +13,14 @@ binds {
     }
 
     Mod+W { focus-workspace-up; }
-    Mod+S { focus-workspace-down; }
     Mod+A { focus-column-left; }
+    Mod+S { focus-workspace-down; }
     Mod+D { focus-column-right; }
+
+    Mod+Shift+W { move-column-to-workspace-up; }
+    Mod+Shift+A { move-column-left; }
+    Mod+Shift+S { move-column-to-workspace-down; }
+    Mod+Shift+D { move-column-right; }
 
     Mod+E {
         spawn "nautilus";
