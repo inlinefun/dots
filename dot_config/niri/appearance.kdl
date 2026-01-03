@@ -2,7 +2,6 @@ layout {
     gaps 5
     background-color "transparent"
     center-focused-column "never"
-    always-center-single-column
     border {
         on
         width 2
