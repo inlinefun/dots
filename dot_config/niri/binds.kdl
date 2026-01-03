@@ -11,6 +11,12 @@ binds {
     Mod+Shift+C repeat=false {
         close-window;
     }
+
+    Mod+W { focus-workspace-up; }
+    Mod+S { focus-workspace-down; }
+    Mod+A { focus-column-left; }
+    Mod+D { focus-column-right; }
+
     Mod+E {
         spawn "nautilus";
     }
